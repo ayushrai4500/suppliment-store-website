@@ -1,0 +1,45 @@
+<<<<<<< HEAD
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Successful | Muscle Hub</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .success-card {
+            text-align: center;
+            padding: 50px 20px;
+            background: #1a1a1a;
+            border-radius: 10px;
+            margin-top: 50px;
+            border: 1px solid var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-card">
+            <h1 style="color: #25d366;">✔️ Order Placed!</h1>
+            <p>Aapka order WhatsApp par bhej diya gaya hai.</p>
+            <div id="order-info" style="margin: 20px 0; color: #ccc;">
+                </div>
+            <p>Dheeraj Kumar aapse jald hi sampark karenge.</p>
+            <br>
+            <a href="index.html" class="btn-primary">Back to Home</a>
+        </div>
+    </div>
+
+    <script>
+        // LocalStorage se last order ki details nikalna
+        const lastOrder = JSON.parse(localStorage.getItem('lastOrder'));
+        if(lastOrder) {
+            document.getElementById('order-info').innerHTML = `
+                <p><strong>Order ID:</strong> ${lastOrder.orderId}</p>
+                <p><strong>Total Amount:</strong> ₹${lastOrder.total}</p>
+            `;
+        }
+    </script>
+</body>
+=======
+ 
